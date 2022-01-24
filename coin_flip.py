@@ -23,4 +23,4 @@ for experiment_number in range(10000):
 			number_of_streaks += 1
 			break			
 print(number_of_streaks)
-print(number_of_streaks / 100)	
+print('Chance of streak: %s%%' % (number_of_streaks / 100))
