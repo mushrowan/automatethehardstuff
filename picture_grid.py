@@ -15,6 +15,6 @@ for x in range(len(grid[0])):
 		line += grid[y][x]
 		if y == len(grid) - 1:
 			line += '\n'	
-print(line)	
+print(line, end='')	
 
 		
