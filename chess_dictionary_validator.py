@@ -16,5 +16,16 @@ if set(sample_working_board.keys()).issubset(default_squares):
     print('All keys are valid.')
 else: 
     print('This ain\'t good, chief.')
+
+
+def checkquantities(input_board, piece_to_check): # Count the quantity of a given piece, given a board.
+   count = 0
+   for square, square_contents in input_board:
+       if square_contents = piece_to_check:
+           count += 1
+    return count
+
+
+
 print(default_squares)
 
