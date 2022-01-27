@@ -18,10 +18,19 @@ display_inventory(stuff)
 
 def add_to_inventory(inventory, added_items):
     # ROWAN CODE IN THIS INDENT
+    for item in added_items:
+        if item in inventory.keys():
+            inventory[item] += 1
+            print('added one ' + item)
+            print(inventory)
+        else:
+            print('no ' + item + ' in the inventory. adding...')
+            inventory[item] = 1
     # TODO
 
 inv = {'gold coin': 42, 'rope': 1}
 dragon_loot = ['gold coin', 'dagger', 'gold coin', 'ruby']
 
-inv = add_to_inventory(inv, dragon_loot)
+add_to_inventory(inv, dragon_loot)
+
 display_inventory(inv)
