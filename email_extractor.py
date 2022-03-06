@@ -10,9 +10,8 @@ import pyperclip, re
 
 '''
 
-# TODO: Get text from the clipboard
 input_string = str(pyperclip.paste())
-# TODO: Create an email address regex
+
 email_regex = re.compile(r'''(
 
     (\w+(\.\w+)*)       # Captures ghjk, fsdfa.adsfad, but not .asdfads., asdf..adfdsaf
